@@ -26,7 +26,7 @@ def ONDC_dash():
     st.markdown('<p class="big-font">ONDC Dashboard</p>', unsafe_allow_html=True)
     # @st.cache_data
     def load_data():
-        df = pd.read_csv(r"C:\Users\vijay39.kumar\Desktop\Ploytly and Streamlit dashboard\dashboard_dummy_data.csv")
+        df = pd.read_csv("data/dashboard_dummy_data.csv")
         df[['soi_created_at', 'soi_eta', 'sof_shipped_at', 'sof_delivered_at']] = df[
             ['soi_created_at', 'soi_eta', 'sof_shipped_at', 'sof_delivered_at']
         ].apply(pd.to_datetime)
