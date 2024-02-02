@@ -83,7 +83,8 @@ def main():
     page = st.sidebar.selectbox("Select Report", list(pages.keys()))
     pages[page]()
 
-authenticator.logout("Logout", "sidebar")
+
 
 
 main()
+authenticator.logout("Logout", "sidebar")
