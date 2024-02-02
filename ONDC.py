@@ -112,7 +112,7 @@ def ONDC_dash():
                                                                                                                 'Net_order_value':'NOV',
                                                                                                                 'l1_cn':'Category'})
         # with st.expander("Data Preview"):
-        st.dataframe(category_wise_orders, use_container_width=True)
+        st.write(category_wise_orders)
 
     def barchart(a, chart_width=700, chart_height=450):
         # Grouping the data
