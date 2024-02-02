@@ -6,3 +6,4 @@ pathlib
 pandas
 numpy
 ONDC
+locale
