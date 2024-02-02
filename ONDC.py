@@ -7,12 +7,12 @@ import warnings
 import plotly.graph_objects as go
 from PIL import Image
 import streamlit as st
-import locale
+# import locale
 
 warnings.filterwarnings('ignore')
 
 def ONDC_dash():
-    locale.setlocale(locale.LC_ALL, 'en_IN')
+    # locale.setlocale(locale.LC_ALL, 'en_IN')
 
     st.markdown("""
     <style>
@@ -228,7 +228,7 @@ def ONDC_dash():
         )
         
         for i, row in l1_cn_grouped.iterrows():
-            formatted_value = locale.format('%d', round(row['Net_order_value']), grouping=True)
+            formatted_value = round(row['Net_order_value'])
             line_fig.add_annotation(
                 x=row['Date'],
                 y=row['Net_order_value'],
