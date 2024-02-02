@@ -65,6 +65,8 @@ def create_pages_dict(page_numbers):
 
 pages = create_pages_dict([1, 2])
 
+authenticator.logout("Logout", "sidebar")
+
 def main():
 
     if st.session_state.get('authentication_status') != True:
@@ -83,8 +85,5 @@ def main():
     page = st.sidebar.selectbox("Select Report", list(pages.keys()))
     pages[page]()
 
-
-
-
 main()
-authenticator.logout("Logout", "sidebar")
+
