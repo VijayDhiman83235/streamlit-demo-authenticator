@@ -63,7 +63,7 @@ def create_pages_dict(page_numbers):
 
     return pages_dict
 
-pages = create_pages_dict([1, 2])
+pages = create_pages_dict([1, 3])
 
 authenticator.logout("Logout", "sidebar")
 
